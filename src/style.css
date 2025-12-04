@@ -1,0 +1,41 @@
+/* ==================== ERROR PAGES GLOBAL STYLES ==================== */
+
+/* Asegurar que el rol/path se vea destacado */
+.error-description strong {
+  color: var(--color-primary);
+  font-weight: 700;
+  padding: 2px 8px;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 4px;
+}
+
+/* Animación suave para las páginas de error */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Mejora visual para los códigos de error */
+.error-code {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #45a049 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hover effect para los botones de error */
+.error-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease;
+}
